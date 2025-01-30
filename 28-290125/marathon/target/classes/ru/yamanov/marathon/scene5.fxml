@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.yamanov.marathon.controller.FiveController">
+   <children>
+      <ToolBar prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+        <items>
+          <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonOnAction" text="Назад" />
+            <Label prefHeight="38.0" prefWidth="297.0" text="MARATHON SKIILS 2016" textAlignment="CENTER" textFill="#efeaea" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" text="logout" />
+        </items>
+      </ToolBar>
+      <ToolBar layoutY="380.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+         <items>
+            <Label prefHeight="9.0" prefWidth="472.0" text="18 дней 8 часов 17 минут до старта марафона!" textFill="#faf6f6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Label layoutX="193.0" layoutY="48.0" prefHeight="19.0" prefWidth="222.0" text="Регистрация на марафон">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="74.0" prefHeight="48.0" prefWidth="503.0" text="Пожалуйста, заполните всю информацию, чтобы зарегистрироваться на Skiils&#10;     Marathon 2016, проводимом в Москве, Russia. С вами свяжутся &#10;         после регистрации для уточнения оплаты и другой информации" textAlignment="CENTER" />
+      <Label layoutX="53.0" layoutY="125.0" text="Вид марафона">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="check1" layoutX="40.0" layoutY="159.0" mnemonicParsing="false" text="42 km. Полный марафон($145)" />
+      <CheckBox fx:id="check2" layoutX="40.0" layoutY="183.0" mnemonicParsing="false" text="21 km. Полумарафон($75)" />
+      <CheckBox fx:id="check3" layoutX="40.0" layoutY="212.0" mnemonicParsing="false" text="5 km. Малая дистанция($20)" />
+      <Label layoutX="366.0" layoutY="125.0" text="Варианты комплектов">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rad1" layoutX="326.0" layoutY="159.0" mnemonicParsing="false" text="Вариант А($0): номер бегуна +RFID браслет" />
+      <RadioButton fx:id="rad2" layoutX="326.0" layoutY="183.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="262.0" text="Вариант B($20): вариант А+бейсболка+бутылка воды" />
+      <RadioButton fx:id="rad3" layoutX="326.0" layoutY="211.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="262.0" text="Вариант С($45): вариант B+футболка+сувенирный буклет" />
+      <Label layoutX="52.0" layoutY="230.0" text="Детали спонсорства">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="266.0" text="Взнос:" />
+      <Label layoutX="13.0" layoutY="298.0" text="Сумма взноса:" />
+      <TextField layoutX="98.0" layoutY="294.0" promptText="\$500" />
+      <ComboBox layoutX="98.0" layoutY="262.0" prefWidth="150.0" promptText="Фонд кошек" />
+      <Label layoutX="348.0" layoutY="261.0" text="Регистрационный взнос">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="291.0" text="\$0">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="goButton" layoutX="97.0" layoutY="335.0" mnemonicParsing="false" onAction="#goButtonOnAction" text="Регистрация" />
+      <Button layoutX="218.0" layoutY="335.0" mnemonicParsing="false" text="Отмена" />
+   </children>
+</AnchorPane>

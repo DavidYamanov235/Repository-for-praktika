@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.yamanov.marathon.controller.FourController">
+   <children>
+      <ToolBar prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+        <items>
+          <Button fx:id="BackButton" mnemonicParsing="false" onAction="#BackButtonOnAction" text="Назад" />
+            <Label prefHeight="38.0" prefWidth="297.0" text="MARATHON SKIILS 2016" textAlignment="CENTER" textFill="#efeaea" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" text="logout" />
+        </items>
+      </ToolBar>
+      <ToolBar layoutY="376.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+         <items>
+            <Label prefHeight="24.0" prefWidth="465.0" text="18 дней 8 часов 17 минут до старта марафона!" textFill="#faf6f6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Label layoutX="204.0" layoutY="48.0" prefHeight="19.0" prefWidth="222.0" text="Регистрация бегуна">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="69.0" prefHeight="56.0" prefWidth="535.0" text="Пожалуйста, заполните всю информацию, чтобы зарегистрироваться в качестве&#10; бегуна  " textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="138.0" text="Email:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="166.0" text="Пароль:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTexField" layoutX="109.0" layoutY="135.0" prefHeight="10.0" prefWidth="166.0" promptText="email" />
+      <TextField fx:id="passwordTexField" layoutX="109.0" layoutY="163.0" promptText="пароль" />
+      <TextField fx:id="repeatepasswordlTexField" layoutX="109.0" layoutY="195.0" promptText="Enter your password" />
+      <TextField fx:id="nameTexField" layoutX="109.0" layoutY="227.0" promptText="Имя" />
+      <TextField fx:id="surnameTexField" layoutX="109.0" layoutY="260.0" promptText="Фамилия" />
+      <Label layoutX="4.0" layoutY="199.0" text="Повторите пароль:" />
+      <ComboBox layoutX="109.0" layoutY="294.0" prefWidth="150.0" promptText="Мужской" />
+      <Label layoutX="79.0" layoutY="231.0" text="Имя:" />
+      <Label layoutX="53.0" layoutY="264.0" text="Фамилия:" />
+      <Label layoutX="80.0" layoutY="298.0" text="Пол:" />
+      <ImageView fitHeight="120.0" fitWidth="92.0" layoutX="475.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Downloads/2025-01-29_10-15-35.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="357.0" layoutY="199.0" text="Фото файл:" />
+      <TextField layoutX="313.0" layoutY="218.0" promptText="Photo_logo.jrg" />
+      <Button layoutX="475.0" layoutY="218.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="92.0" text="Просмотр..." />
+      <Label layoutX="315.0" layoutY="256.0" text="Дата рождения:" />
+      <Label layoutX="359.0" layoutY="285.0" text="Страна:" />
+      <TextField fx:id="dataTexField" layoutX="411.0" layoutY="252.0" promptText="1978-06-07" />
+      <ComboBox layoutX="411.0" layoutY="282.0" prefWidth="150.0" promptText="Russia" />
+      <Button fx:id="goButton" layoutX="192.0" layoutY="339.0" mnemonicParsing="false" onAction="#goButton" text="Регистрация" />
+      <Button fx:id="cancelButton" layoutX="307.0" layoutY="339.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Отмена" />
+   </children>
+</AnchorPane>

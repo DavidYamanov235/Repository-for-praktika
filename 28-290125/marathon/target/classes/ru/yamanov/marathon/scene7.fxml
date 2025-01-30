@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.yamanov.marathon.controller.SevenController">
+   <children>
+      <ToolBar prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+        <items>
+          <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButtonOnAction" text="Назад" />
+            <Label prefHeight="38.0" prefWidth="297.0" text="MARATHON SKIILS 2016" textAlignment="CENTER" textFill="#efeaea" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="outButton" mnemonicParsing="false" onAction="#outButtonOnAction" text="logout" />
+        </items>
+      </ToolBar>
+      <Label layoutX="239.0" layoutY="61.0" prefHeight="27.0" prefWidth="154.0" text="Меню бегуна" textFill="#141414">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="regButton" layoutX="70.0" layoutY="104.0" mnemonicParsing="false" onAction="#regButtonOnAction" prefHeight="48.0" prefWidth="190.0" text="Регистрация на марафон">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="173.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="190.0" text="Редактирование профиля">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="243.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="190.0" text="Контакты">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ToolBar layoutY="358.0" prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #575757;">
+         <items>
+            <Label prefHeight="24.0" prefWidth="472.0" text="18 дней 8 часов 17 минут до старта марафона!" textFill="#faf6f6">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Button layoutX="289.0" layoutY="104.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="190.0" text="Мои результаты">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="289.0" layoutY="173.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="190.0" text="Мой спонсор">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
